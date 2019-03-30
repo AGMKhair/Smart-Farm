@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:layout_height="match_parent"
+    tools:context=".AddProfileActivity">
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/addProfileId"
+                android:src="@drawable/profile_icon"
+                android:layout_width="120dp"
+                android:layout_height="120dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name : "
+                    />
+                <EditText
+                    android:id="@+id/addUserNameId"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:backgroundTint="@color/colorWhite"
+                    android:inputType="text"
+                    android:hint="Enter Your Name"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Age : "
+                    />
+                <EditText
+                    android:inputType="number"
+                    android:hint="Enter Your Age"
+                    android:id="@+id/addUserAgeId"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:backgroundTint="@color/colorWhite"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gender : "
+                    android:layout_gravity="center"
+                    />
+                <RadioGroup
+                    android:id="@+id/radioSexId"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/radioMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio_male"
+                        android:checked="true" />
+
+                    <RadioButton
+                        android:id="@+id/radioFemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio_female" />
+
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:padding="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorGreen"
+                    android:text="Link"
+                    android:backgroundTint="@color/cardview_dark_background"
+                    android:textSize="20dp"
+                    android:layout_gravity="center"
+                    />
+                <RadioGroup
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/radiolinkSizeId"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/link1Id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:padding="2dp"
+                        android:checked="true" />
+
+                    <RadioButton
+                        android:id="@+id/link2Id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2" />
+                    <RadioButton
+                        android:id="@+id/link3Id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3"
+                        android:padding="2dp"
+                        />
+                    <RadioButton
+                        android:id="@+id/link4Id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4"
+                        android:padding="2dp"
+                        />
+                    <RadioButton
+                        android:id="@+id/link5Id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5"
+                        android:padding="2dp"
+                        />
+                    <RadioButton
+                        android:id="@+id/link6Id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6"
+                        android:padding="2dp"
+                        />
+
+                </RadioGroup>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/add_linearLayout01"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/dataName1Id"
+                    android:layout_width="wrap_content"
+                    android:inputType="text"
+                    android:layout_height="wrap_content"
+                    android:hint="Link Name"
+                    android:backgroundTint="@color/colorWhite"
+                    />
+
+                <EditText
+                    android:inputType="textUri"
+                    android:hint="www.example.com"
+                    android:id="@+id/datalink1Id"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:backgroundTint="@color/colorWhite"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+
+                android:visibility="gone"
+                android:id="@+id/add_linearLayout02"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/dataName2Id"
+                    android:inputType="text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Link Name "
+                    android:backgroundTint="@color/colorWhite"
+                    />
+
+                <EditText
+                    android:inputType="textUri"
+                    android:hint="www.example.com"
+                    android:id="@+id/datalink2Id"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:backgroundTint="@color/colorWhite"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+
+                android:visibility="gone"
+                android:id="@+id/add_linearLayout03"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:inputType="text"
+                    android:id="@+id/dataName3Id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Link Name"
+                    android:backgroundTint="@color/colorWhite"
+                    />
+
+                <EditText
+                    android:inputType="textUri"
+                    android:hint="www.example.com"
+                    android:id="@+id/datalink3Id"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:backgroundTint="@color/colorWhite"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+
+                android:visibility="gone"
+                android:id="@+id/add_linearLayout04"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:inputType="text"
+                    android:id="@+id/dataName4Id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Link Name"
+                    android:backgroundTint="@color/colorWhite"
+                    />
+
+                <EditText
+                    android:inputType="textUri"
+                    android:hint="www.example.com"
+                    android:id="@+id/datalink4Id"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:backgroundTint="@color/colorWhite"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+
+                android:visibility="gone"
+                android:id="@+id/add_linearLayout05"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:inputType="text"
+                    android:id="@+id/dataName5Id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Link Name"
+                    android:backgroundTint="@color/colorWhite"
+                    />
+
+                <EditText
+                    android:inputType="textUri"
+                    android:hint="www.example.com"
+                    android:id="@+id/datalink5Id"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:backgroundTint="@color/colorWhite"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+
+                android:visibility="gone"
+                android:id="@+id/add_linearLayout06"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:inputType="text"
+                    android:id="@+id/dataName6Id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Link Name"
+                    android:backgroundTint="@color/colorWhite"
+                    />
+
+                <EditText
+                    android:inputType="textUri"
+                    android:hint="www.example.com"
+                    android:id="@+id/datalink6Id"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:backgroundTint="@color/colorWhite"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <Button
+                android:text="Submit"
+                android:background="@drawable/button_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/submitBtnId"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

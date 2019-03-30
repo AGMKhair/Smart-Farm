@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:padding="20dp"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="120dp"
+        android:layout_gravity="center"
+        android:src="@drawable/profile_icon"
+        android:layout_height="120dp" />
+<EditText
+    android:textAlignment="center"
+    android:inputType="text"
+    android:layout_width="match_parent"
+    android:hint="update name"
+    android:layout_height="wrap_content"
+    android:id="@+id/update_name_id"
+    android:backgroundTint="@color/colorWhite"
+    />
+
+    <EditText
+    android:textAlignment="center"
+    android:inputType="number"
+    android:layout_width="match_parent"
+    android:hint="update age"
+    android:layout_height="wrap_content"
+    android:id="@+id/update_age_id"
+    android:backgroundTint="@color/colorWhite"
+    />
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/update_confirm_id"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_bg"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="Update"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/update_cancel_id"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_bg"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="Cancel"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent"
+    tools:context=".ViewProfileActivity">
+
+    <android.support.v7.widget.CardView
+        android:elevation="5dp"
+        android:id="@+id/card"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/show_user_image_id"
+            android:src="@drawable/profile_icon"
+            android:layout_width="100dp"
+            android:padding="15dp"
+            android:layout_height="100dp" />
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/show_user_name_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name : Sabbir"
+                />
+            <TextView
+                android:id="@+id/show_user_age_id"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Age : 16"
+                />
+            <TextView
+                android:id="@+id/show_user_gender_id"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gender : Male"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/show_link_recyclerViewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="20dp">
+
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>
